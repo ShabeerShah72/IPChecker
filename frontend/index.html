@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>IP Address Checker</h1>
+            
+            <form id="ipForm">
+                <div class="input-section">
+                    <label for="ipInput" class="input-label">IP Address</label>
+                    <div class="input-group">
+                        <input 
+                            type="text" 
+                            id="ipInput" 
+                            placeholder="Enter IP address (e.g., 8.8.8.8)" 
+                            required
+                            pattern="^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+                        >
+                        <button type="submit" id="submitBtn">
+                            <span id="btnText">Check IP</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p class="pulse">Fetching IP details...</p>
+            </div>
+            
+            <div id="result" class="result hidden"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+com\ipchecker\model\IPLog.class
+com\ipchecker\IPCheckerApplication$1.class
+com\ipchecker\IPCheckerApplication.class
+com\ipchecker\repository\IPRepository.class
+com\ipchecker\service\IPService.class
+com\ipchecker\controller\IPController.class
