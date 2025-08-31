@@ -74,7 +74,10 @@ ip-checker/
 │   ├── style.css                           # Responsive CSS
 │   └── script.js                           # Frontend JavaScript
 ├── pom.xml
-├── Dockerfile                                 # Maven dependencies
+├── Dockerfile
+├── .dockerignore
+├── .gitignore
+├── railways.toml                                 # Maven dependencies
 └── README.md
 ```
 
